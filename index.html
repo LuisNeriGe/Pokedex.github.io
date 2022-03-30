@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Dancing+Script&family=Inspiration&display=swap" rel="stylesheet">
+    <link rel="icon" href="./imagenes/pokebola.ico">
+    <title>Pokémon</title>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="left" id="logo">
+                <a href="https://www.pokemon.com/el/" target="_blank">
+                    <img src="./imagenes/logo.png" alt="logo">
+                </a>
+            </div>
+            <div class="right">
+                <nav>
+                    <a href="#" class="nav link">Inicio</a>
+                    <a href="#pokedex" class="nav link">Pokedex</a>
+                    <a href="https://www.pokemon.com/el/noticias-pokemon/" class="nav link" target="_blank">Noticias</a>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <div class="slider">
+        <ul>
+            <li><img src="./imagenes/slider1.jpg"></li>
+            <li><img src="./imagenes/slider2.jpg"></li>
+            <li><img src="./imagenes/slider3.jpg"></li>
+        </ul>
+    </div>
+
+    <div class="container1">
+        <div class="left1">
+            <img src="./imagenes/pikachu.png" alt="pikachu">
+        </div>
+        <div id="pokedex" class="right1">
+            <h3>Busca a tu pokémon en el pokedex (Ingresa el nombre o Número de tu Pokémon</h3>
+            <input type="text" placeholder="Pikachu" id="pokeName" name="pokeName">            
+            <button onclick="fetchPokemon()">Buscar Pokémon</button>
+            <div class="name1">
+                <h5 id="elem">Nombre</h5>
+                <img class="img1" src="./imagenes/pokedex.png" alt="pokedex">
+                <img class="img2" src="./imagenes/pokebola.png" alt="pokebola" id="pokeImg">
+            </div>
+            <div class="data">
+                <h4 id="id">Número</h4>
+                <h4 id="tipo">Tipo</h4>
+                <h4 id="movimiento">Movimientos</h4>
+                <h4 id="stats">Estadísticas</h4>
+            </div>
+            <div class="wh">
+                <h4 id="peso" class="peso">Peso</h4>
+                <h4 id="habilidad" class="hab">Habilidad</h4>
+            </div>
+        </div>
+    </div>
+    
+    <div class="news">
+        <a href="https://www.pokemon.com/el/noticias-pokemon/" target="_blank">
+            <img src="./imagenes/news.jpg" alt="news">
+            <h1>Las noticias más relevantes de pokemon en un solo clic</h1>
+        </a>
+    </div>
+    <br>
+    <hr>
+    <footer class="pie">
+        <script src="./pokemon.js"></script>
+        <div class="leftfoot">
+            <a href="#logo"><img src="./imagenes/logo.png" alt="logo"></a>
+        </div>
+        <div class="rightfoot">
+            <a href="https://www.pokemon.com/el/app/" target="_blank">Aplicaciones</a>
+            <a href="https://pokemongolive.com/es_mx/" target="_blank">Pokemon Go</a>
+            <a href="https://www.pokemon.com/el/" target="_blank">Página Oficial</a>
+        </div>
+        <small>&copy; 2022 Pokémon. All rights reserved</small>
+    </footer>
+</body>
+</html>
